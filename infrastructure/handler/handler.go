@@ -15,7 +15,6 @@ type ScheduleHandler struct {
 	scheduleUseCase interfaces.ScheduleUseCase
 }
 
-// NewArticleHandler will initialize the articles/ resources endpoint
 func NewProjectHandler(r *gin.Engine, us interfaces.ScheduleUseCase) *gin.Context {
 	handler := &ScheduleHandler{
 		scheduleUseCase: us,

@@ -19,7 +19,6 @@ type mysqlRepo struct {
 	DB *sql.DB
 }
 
-// NewMysqlAuthorRepository will create an implementation of author.Repository
 func NewMysqlScheduleRepository(db *sql.DB) interfaces.ScheduleRepo {
 	return &mysqlRepo{
 		DB: db,
